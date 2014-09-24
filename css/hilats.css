@@ -1,0 +1,260 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
+
+
+
+body {
+    background: #add9e4;
+    background: -moz-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, #f7fbfc), color-stop(100%, #add9e4));
+    background: -webkit-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
+    background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
+    background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
+    background: radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
+    background-color: #f7fbfc; }
+
+
+body {
+    font-family: sans-serif;
+    /*font-size: 20px;*/
+    font-weight: 300;
+}
+
+.backgrounds {
+    background-position-y: 100px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    background-position: right;
+    /*
+    background-size: 100%;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    */
+}
+
+.hilats .reveal .slides {
+    text-align: justify;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.hilats .reveal h1, .hilats .reveal h2, .hilats .reveal h3, .hilats .reveal h4, .hilats .reveal h5, .hilats .reveal h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.hilats .reveal h1, .hilats .reveal h2, .hilats .reveal h3, .hilats .reveal h4 {
+    text-align: center;
+}
+
+.hilats .reveal h5, .hilats .reveal h6 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.fixedbar {
+    background-color: rgba(255,255,255,0.4);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    -webkit-font-smoothing: antialiased;
+}
+
+.footer {
+    padding: 5px 0px;
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+}
+
+.footer > div > span {
+    white-space: nowrap;
+}
+
+.colsep {
+    height: 1.5em;
+    border-left: 1px solid #8AA9B6;
+    margin: 0px 15px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.logo {
+    /*font-family: brandon-grotesque, sans-serif;*/
+    /*font-family: proxima-nova, sans-serif;*/
+
+    /*font-family:"Helvetica Neue", Arial, sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    /*font-variant: small-caps;*/
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+.logo>span {
+    vertical-align: top;
+}
+
+.logo>span:first-child {
+    font-weight: 300;
+    color: #51616b
+}
+
+.logo>span:last-child {
+    font-weight: 700;
+    color: #4D6991;
+
+}
+
+.navbar-toggle {
+    padding: 6px 8px;
+    margin-top: 12px;
+    margin-right: 13px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav > li > a {
+    /*
+    padding-top: 0px;
+    padding-bottom: 0px;
+    */
+}
+
+.hilats .navbar-nav > li.active {
+
+}
+.hilats .navbar-nav > li.active > a {
+
+}
+
+.hilats .navbar-default .navbar-nav > .active > a {
+    background-color: transparent;
+    border-top: 1px solid #8AA9B6;
+    border-bottom: 1px solid #8AA9B6;
+}
+
+.hilats .navbar-default .navbar-nav > .active > a, .hilats .navbar-default .navbar-nav a:hover, .hilats .navbar-default .navbar-nav a:focus {
+    -webkit-font-smoothing: initial;
+    color: #333333;
+}
+
+.hilats .navbar-fixed-top {
+    border-width: 0 0 0px;
+}
+
+
+.navbar-nav {
+    margin: 0px auto;
+}
+
+/*
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+*/
+
+.navbar-default .navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+
+.collapse {
+    display: block;
+}
+
+.collapse ul {
+    overflow: hidden;
+    height: 1px;
+}
+
+.nav-padder {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #92b7d6;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #4D6991;
+}
+.navbar-default .navbar-toggle {
+    border-color: #4D6991;
+}
+
+.hilats .reveal section p {
+    padding-top: 1em;
+}
+
+.hilats .reveal .contactlinks {
+    margin-left: 0.5em;
+}
+
+.hilats .reveal .contactlinks>a>img  {
+    border: none;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    .navbar-collapse ul {
+        white-space: nowrap;
+    }
+
+    .navbar-collapse li {
+        width: 32%;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .backgrounds {
+        background-position-y: 0px;
+        background-position-x: 100px;
+        /*background-position: right;*/
+        background-size: 100%;
+        /*
+
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        */
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+
+    .hilats .navbar-default .navbar-nav > .active > a {
+        border-top: none;
+    }
+
+    .collapse ul {
+        overflow: auto;
+        height: auto;
+    }
+
+    .navbar-centered {
+        width: 800px;
+        display: inline-block;
+    }
+}

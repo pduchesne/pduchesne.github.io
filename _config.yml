@@ -1,0 +1,17 @@
+permalink: /:categories/:year/:month/:day/:title
+
+exclude: ["*.iml","README.md", "changelog.md", "Gemfile*", "CNAME"]
+highlighter: pygments
+
+
+title : High Latitudes Blog
+tagline: Experiments in software engineering
+author :
+  name : Philippe Duchesne
+  email : phd@highlatitud.es
+  github : pduchesne
+  twitter : pduchesne
+
+
+production_url : http://blog.highlatitud.es
+

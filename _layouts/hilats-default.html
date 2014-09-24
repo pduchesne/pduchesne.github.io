@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="libs/reveal/reveal.min.css">
+    <link rel="stylesheet" href="libs/reveal/sky.css" id="theme">
+
+    <link href="libs/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/hilats.css" rel="stylesheet">
+
+
+    <link href="{{ BASE_PATH }}/atom.xml" type="application/atom+xml" rel="alternate" title="Hgih Latitudes ATOM Feed">
+</head>
+
+<body class="hilats">
+
+<!-- Navbar
+================================================== -->
+
+<!-- <div class="padder" style="height: 50px; width: 100%"></div> -->
+<nav class="navbar navbar-default navbar-fixed-top fixedbar" role="navigation">
+    <div class="container-fluid nav-padder" style="height: 50px">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-centered">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#"><span>high</span><span>latitudes</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://highlatitud.es/#/about">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://highlatitud.es/#/tech">Tech</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="http://blog.highlatitud.es">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="http://highlatitud.es/#/contact">Contact</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="padder" style="height: 50px; width: 100%"></div>
+
+<div>
+
+{{content}}
+
+</div>
+
+<div class="padder" style="height: 50px; width: 100%"></div>
+<div class="footer nav-padder fixedbar">
+    <div class="navbar-centered">
+        <span><a href="mailto:info@highlatitud.es">info@highlatitud.es</a></span> <div class="colsep"> </div>
+        <span>+32 475626916</span> <div class="colsep"> </div>
+        <span>VAT BE0540875661</span>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="libs/bootstrap/bootstrap.js"></script>
+
+</body>
+</html>
+
+
+
