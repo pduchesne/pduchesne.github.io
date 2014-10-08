@@ -1,17 +1,14 @@
-
-
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
-
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,200,100,500,600);
 
 body {
     background: #add9e4;
-    background: -moz-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, #f7fbfc), color-stop(100%, #add9e4));
-    background: -webkit-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
-    background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
-    background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
-    background: radial-gradient(center, circle cover, #f7fbfc 10%, #add9e4 100%);
+    background: -moz-radial-gradient(center, circle cover, #f7fbfc 10%, #BACEDB 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, #f7fbfc), color-stop(100%, #BACEDB ));
+    background: -webkit-radial-gradient(center, circle cover, #f7fbfc 10%, #BACEDB  100%);
+    background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #BACEDB  100%);
+    background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #BACEDB  100%);
+    background: radial-gradient(center, circle cover, #f7fbfc 10%, #BACEDB  100%);
     background-color: #f7fbfc; }
 
 
@@ -22,6 +19,15 @@ body {
 }
 
 .backgrounds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -ms-perspective: 600px;
+    perspective: 600px;
+
+
     background-position-y: 100px;
     background-position-x: 0px;
     background-repeat: no-repeat;
@@ -34,6 +40,8 @@ body {
     */
 }
 
+
+
 .hilats .reveal .slides {
     text-align: justify;
     font-size: 30px;
@@ -41,8 +49,9 @@ body {
 }
 
 .hilats .reveal h1, .hilats .reveal h2, .hilats .reveal h3, .hilats .reveal h4, .hilats .reveal h5, .hilats .reveal h6 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
 }
 
 .hilats .reveal h1, .hilats .reveal h2, .hilats .reveal h3, .hilats .reveal h4 {
@@ -58,6 +67,14 @@ body {
     background-color: rgba(255,255,255,0.4);
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     -webkit-font-smoothing: antialiased;
+    border-width: 0 0 0px;
+}
+
+@media (min-width: 768px) {
+  .fixedbar .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .footer {
@@ -80,11 +97,9 @@ body {
 }
 
 .logo {
-    /*font-family: brandon-grotesque, sans-serif;*/
-    /*font-family: proxima-nova, sans-serif;*/
 
-    /*font-family:"Helvetica Neue", Arial, sans-serif;*/
-    font-family: 'Josefin Sans', sans-serif;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: Raleway, sans-serif;
     font-size: 32px;
     /*font-variant: small-caps;*/
     text-transform: uppercase;
@@ -96,12 +111,12 @@ body {
 }
 
 .logo>span:first-child {
-    font-weight: 300;
+    font-weight: 100;
     color: #51616b
 }
 
 .logo>span:last-child {
-    font-weight: 700;
+    font-weight: 400;
     color: #4D6991;
 
 }
@@ -142,10 +157,6 @@ body {
 .hilats .navbar-default .navbar-nav > .active > a, .hilats .navbar-default .navbar-nav a:hover, .hilats .navbar-default .navbar-nav a:focus {
     -webkit-font-smoothing: initial;
     color: #333333;
-}
-
-.hilats .navbar-fixed-top {
-    border-width: 0 0 0px;
 }
 
 

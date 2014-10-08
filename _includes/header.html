@@ -4,31 +4,76 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ site.name }} {% if page.title %} &mdash; {{ page.title }} {% endif %}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="alternate" type="application/atom+xml" title="{{site.name}}" href="{{site.url }}/feed.xml">
 
-        <meta name="description" content="nadjetey's blog on wangana - jekyll theme" />
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
         {% if page.tags %}
         <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-        {% else %}
-        <meta name="keywords" content="nadjetey, jekyll, wangana">
         {% endif %}
 
         <link rel="icon" type="image/png" href="{{site.url}}/favicon.png">
 
-        <!-- Custom CSS -->
+        <meta name="author" content="{{ site.author.name }}">
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <link rel="stylesheet" href="libs/reveal/reveal.min.css">
+        <link rel="stylesheet" href="libs/reveal/sky.css" id="theme">
+
+        <!-- <link rel="stylesheet" href="libs/bootstrap/bootstrap.css"> -->
         <link rel="stylesheet" href="{{site.url}}/assets/css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{site.url}}/assets/css/hilats.css">
 
         <!-- JQuery -->
         <script src="{{site.url}}/assets/js/jquery-1.10.2.js"></script>
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-<body>
+
+    <link href="{{ BASE_PATH }}/atom.xml" type="application/atom+xml" rel="alternate" title="High Latitudes ATOM Feed">
+</head>
+
+<body class="hilats">
+
+<div class="reveal" style="position:absolute">
+    <div class="backgrounds" style="background-image: url(http://highlatitud.es/graph.png); background-size:500px"></div>
+</div>
+
+
+<!-- Navbar
+================================================== -->
+
+<!-- <div class="padder" style="height: 50px; width: 100%"></div> -->
+<nav class="navbar navbar-default fixedbar" role="navigation">
+    <div class="container-fluid nav-padder" style="height: 50px">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-centered">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#"><span>high</span><span>latitudes</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://highlatitud.es/#/about">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://highlatitud.es/#/tech">Tech</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="/">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="http://highlatitud.es/#/contact">Contact</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>

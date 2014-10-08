@@ -118,14 +118,18 @@ pre {
 }
 
 .postlist-title {
+  font-family: Raleway;
   font-size: 22px;
-  font-weight: 700;
+  /*font-weight: 700;*/
+  line-height: 1.1;
 }
 
 .page-title {
+  font-family: Raleway;
   font-size: 31px;
-  font-weight: 700;
+  /*font-weight: 700;*/
   padding: 0 0 0 15px;
+  line-height: 1.1;
 }
 
 .post {
@@ -134,10 +138,12 @@ pre {
   padding: 20px 15px 0;
 }
 
+/*
 .post > .container,
 #wrap > .container {
   padding: 75px 0 60px;
 }
+*/
 
 .post-comments {
   border-top: 2px solid #000;

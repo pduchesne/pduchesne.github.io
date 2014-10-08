@@ -14,7 +14,7 @@
   position: relative;
   .container {
     max-width: 800px!important;
-    padding: 75px 0 60px;
+    /* padding: 75px 0 60px; */
   }
 }
 
@@ -36,12 +36,14 @@
 
 body {
   color:#000;
-  font: 17px Poly, 'Helvetica Neue', Helvetica, serif, Arial !important;
+  font: 17px Poly, 'Helvetica Neue', Helvetica, serif, Arial;
 }
 
+/*
 .footer {
   height:60px;
 }
+*/
 
 #nav {
   padding: 0!important;
@@ -169,3 +171,12 @@ body {
     padding-bottom: 10px !important;
   }
 }
+
+.navbar-brand {
+  /* align on hilats website */
+  margin-left: 0 !important;
+}
+
+/* format code blocks numbering */
+.post > .highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
+.post > .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
