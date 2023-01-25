@@ -1,0 +1,8 @@
+{
+  "@context": "https://www.w3.org/ns/solid/oidc-context.jsonld",
+  "client_id": "https://devlocal.datavillage.me",
+  "redirect_uris": ["http://localhost:3050/auth/connect/solid/callback"],
+  "client_name": "Datavillage Passport - Dev Local",
+  "scope" : "openid offline_access webid",
+  "grant_types" : ["refresh_token","authorization_code"]
+}
